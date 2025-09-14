@@ -1,0 +1,40 @@
+Project:
+-Name
+-CreatedAt
+-Task States
+
+Task State
+-Name
+-CreatedAt
+-Ordinal
+-Task List
+
+Task
+-Name
+-CreatedAt
+-Description(full text)
+-Category(enum)
+-Priority
+
+Project
+-id(long)
+-name(String)
+-createdAt (time)
+-taskStates(TaskState[] array)
+
+TaskState
+-id(long)
+-name(String)
+-ordinal(long)
+-createdAt(time)
+-tasks(task[] array)
+
+Task
+-id(long)
+-name(string)
+-description (string)
+-createdAt(time)
+
+-DB Entities
+-DB Entity management
+-Rest API (business logic layer)
