@@ -1,17 +1,19 @@
-package com.tasktrackersueren.Model;
+package com.tasktrackersueren.Entities;
 
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 import org.antlr.v4.runtime.misc.NotNull;
-import org.hibernate.annotations.NotFound;
 
-import java.time.Instant;
-
+@Getter
+@Setter
 @Entity
-@Table(name ="task_table")
-public class Task {
+@Table(name = "task_table")
+public class TaskEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private long id;
     @NotNull
+    @Column(unique = true)
     private String TaskName;
 }

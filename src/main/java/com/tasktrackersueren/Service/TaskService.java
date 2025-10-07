@@ -1,4 +1,7 @@
 package com.tasktrackersueren.Service;
 
-public class TaskService {
+import org.springframework.stereotype.Service;
+
+@Service
+public interface TaskService {
 }
